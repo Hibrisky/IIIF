@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3309377059897968963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3309377059897968972}
+  - component: {fileID: 3309377059897968973}
+  - component: {fileID: 727406536}
+  m_Layer: 0
+  m_Name: GameManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3309377059897968972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3309377059897968963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3309377059897968973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3309377059897968963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058d47794f9945346aed56ef3a0cdf91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraObject:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &727406536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3309377059897968963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31259aad627213041835c5185ec7bd38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIPool: {fileID: 0}
+  UIWindowList:
+  - _UIWindow: {fileID: 884635143218191417, guid: 268fe132d7fa11e46b2137c3d1d24d09, type: 3}
+    _Id: 0
+    _IsShow: 0
+  - _UIWindow: {fileID: 949911350287534339, guid: 3e421165602eeba4aade9efe86cbf4b1, type: 3}
+    _Id: 1
+    _IsShow: 0
+  - _UIWindow: {fileID: 1835655657371617531, guid: 637f78b8a513c2f4f8742317f6dd57ac, type: 3}
+    _Id: 2
+    _IsShow: 0
+  - _UIWindow: {fileID: 6723117238480354057, guid: 4806f6e17b1b01b46810fe422596f672, type: 3}
+    _Id: 3
+    _IsShow: 0
+  - _UIWindow: {fileID: 4575722185046653135, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+    _Id: 4
+    _IsShow: 0
+  UIPopupList:
+  - _UIPopup: {fileID: 4181657602839860957, guid: a8334e983f86b32428817d967a058d9a, type: 3}
+    _Id: 0
+    _IsShow: 0
+  - _UIPopup: {fileID: 4857374456307903274, guid: 504986907b92a4b43be513686a71bceb, type: 3}
+    _Id: 1
+    _IsShow: 0
+  - _UIPopup: {fileID: 7909068814621637141, guid: 7e20b4083266c0147b6ed1116a304d11, type: 3}
+    _Id: 2
+    _IsShow: 0
+  - _UIPopup: {fileID: 6302345998854304220, guid: 8821951d9e22c3a4eba58b3e8227a4c8, type: 3}
+    _Id: 3
+    _IsShow: 0
+  - _UIPopup: {fileID: 3164379917724291288, guid: fc8510aaf5f57454d9e626de77943b2c, type: 3}
+    _Id: 4
+    _IsShow: 0
