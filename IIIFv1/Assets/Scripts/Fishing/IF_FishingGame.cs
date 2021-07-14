@@ -64,6 +64,9 @@ public class IF_FishingGame : MonoBehaviour
                         m_FishingUI.SettingBitetoBait();
                         m_FishingUI.ActiveUI();
                         m_FishingUI.SettingHPbar(100f); //임시 체력.
+
+                        //진동
+                        Handheld.Vibrate();
                     }
 
                     float _hp = m_FishingUI.GetFishHP();

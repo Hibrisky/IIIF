@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GhostGo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/FishingGame.unity
     guid: 266b36e42f286a344a48631e686d5b9f
   - enabled: 0
@@ -26,7 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/JigsawPuzzle.unity
     guid: e8f39edd918b8c74394bb6dd6ab2b08d
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/Tutorial/PhotoTuto.unity
+    guid: b88a601a8f9124f41ad92f7c8505b586
+  - enabled: 0
     path: Assets/Scenes/NotUsed/Test.unity
     guid: 1c8c694f422c1b046a78690116d1fb03
   m_configObjects:

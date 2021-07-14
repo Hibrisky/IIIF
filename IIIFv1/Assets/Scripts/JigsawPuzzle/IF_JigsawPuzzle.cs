@@ -79,7 +79,7 @@ public class IF_JigsawPuzzle : MonoBehaviour
                 Puzzles.transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
                 Puzzles.transform.SetParent(m_SpritesRoot.transform);
                 Debug.Log(m_SpritesRoot.transform.position);
-                //m_SpritesRoot.transform.position = new Vector3(0,0,100);
+                m_SpritesRoot.transform.position = new Vector3(0,0,100);
             }
             else
                 Debug.Log("Texture Divide Fail");

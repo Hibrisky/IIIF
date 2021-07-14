@@ -73,7 +73,8 @@ public class IF_FishingRod : MonoBehaviour
             }
             else if (CurrentRot.x < -0.9f)
             {
-                CastingCancel();
+                if(m_RodState != FishingState.E_HIT)
+                    CastingCancel();
             }
 
             switch (m_RodState)

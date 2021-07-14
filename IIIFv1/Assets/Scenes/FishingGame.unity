@@ -579,6 +579,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1863043800, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 29.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863043801, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_Text
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863043801, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863043801, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863043801, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863043801, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863043801, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4575722185046653131, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -677,14 +705,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4575722185693796812, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575722186593445342, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575722186593445342, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
-      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4575722186793514719, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
@@ -1556,7 +1576,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1781633616
 RectTransform:

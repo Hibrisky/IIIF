@@ -11,6 +11,9 @@ TagManager:
   - Charm
   - Fish
   - HPBar
+  - BlueZone
+  - OrangeZone
+  - RedZone
   layers:
   - Default
   - TransparentFX

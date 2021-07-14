@@ -70,6 +70,15 @@ public class GameManager : MonoBehaviour
         UIManager._Instance = null;
     }
 
+    #region 3D퍼즐게임
+    public void ClearPuzzle(int _puzzleID = 0)
+    {
+        Debug.Log("퍼즐 맞췄다!");
+    }
+
+    #endregion
+
+    #region 화면 회전
     void ScreenSettingToLandscape()//방 탈출 시에만 사용.
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
@@ -79,4 +88,6 @@ public class GameManager : MonoBehaviour
     {
         Screen.orientation = ScreenOrientation.Portrait;
     }
+
+    #endregion
 }

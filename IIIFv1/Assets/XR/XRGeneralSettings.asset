@@ -93,8 +93,7 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
-  m_Loaders:
-  - {fileID: 11400000, guid: 0440f81ad37bcb24f86c2e0453be2055, type: 2}
+  m_Loaders: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +156,7 @@ MonoBehaviour:
   m_Name: iOS Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: -231901985286808747}
-  m_InitManagerOnStart: 1
+  m_InitManagerOnStart: 0
 --- !u!114 &7881579051905442810
 MonoBehaviour:
   m_ObjectHideFlags: 0
