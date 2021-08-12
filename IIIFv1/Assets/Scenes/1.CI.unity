@@ -745,6 +745,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7341864587974222655, guid: babb0b6750a321542800859b1195451d, type: 3}
   m_PrefabInstance: {fileID: 1473857193}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1506819900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8346658881434080055, guid: 86d517eab2ee6a248863cde757ae4d0d, type: 3}
+  m_PrefabInstance: {fileID: 3425659936001922676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1595834476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7341864587974222640, guid: babb0b6750a321542800859b1195451d, type: 3}
@@ -1168,7 +1173,7 @@ PrefabInstance:
     - target: {fileID: 3309377059897968973, guid: 8e8ba56b0a3115f4fb983cfb515482af, type: 3}
       propertyPath: m_PuzzleInfo.Array.data[0].Arr_Difficulty
       value: 
-      objectReference: {fileID: 6656084438422302859, guid: bdaabe56c4cd4a8439cc03b41d196fa6, type: 3}
+      objectReference: {fileID: 1506819900}
     - target: {fileID: 3309377059897968973, guid: 8e8ba56b0a3115f4fb983cfb515482af, type: 3}
       propertyPath: m_PuzzleInfo.Array.data[0].PuzzleImage.Array.data[0]
       value: 

@@ -12,7 +12,9 @@ public class IF_PuzzleWindow : MonoBehaviour
     int resWidth;
     int resHeight;
 
-    PuzzleInfo CreatePuzzle;
+    //PuzzleInfo CreatePuzzle;
+
+    PieceScript[] m_Pieces;// = new PieceScript[];
 
     // Start is called before the first frame update
     void OnEnable()
@@ -38,8 +40,10 @@ public class IF_PuzzleWindow : MonoBehaviour
         Btn_Start.onClick.RemoveAllListeners();
         Btn_Back.onClick.RemoveAllListeners();
 
-        GameManager.Instance.GetARCamera().targetTexture = null;
+       
         GameManager.Instance.GetPuzzleInfo()[0].Arr_Difficulty.SetActive(false);
+
+       
     }
 
     void OnClick_Shutter()//camera Screen Capture
@@ -53,11 +57,11 @@ public class IF_PuzzleWindow : MonoBehaviour
         //난이도는 임시로 고정한다.
         int ChildCount = GameManager.Instance.GetPuzzleInfo()[0].Arr_Difficulty.GetComponentsInChildren<PieceScript>().Length;
         //
-        PieceScript[] _temp = GameManager.Instance.GetPuzzleInfo()[0].Arr_Difficulty.GetComponentsInChildren<PieceScript>();
+        m_Pieces = GameManager.Instance.GetPuzzleInfo()[0].Arr_Difficulty.GetComponentsInChildren<PieceScript>();
         //
         for (int i = 0; i < ChildCount; i++)
         {
-            _temp[i].RandomPiecePos();
+            m_Pieces[i].RandomPiecePos();
         }
         //
     }
@@ -65,6 +69,14 @@ public class IF_PuzzleWindow : MonoBehaviour
     void OnClick_Back()// Go to Main
     {
         UIManager._Instance.CloseOneBtnPopupAndBackToMain(this.gameObject, 5, "메인으로 이동합니다.", "진행중인 미션은 취소됩니다.");
+
+        int ChildCount = GameManager.Instance.GetPuzzleInfo()[0].Arr_Difficulty.GetComponentsInChildren<PieceScript>().Length;
+        for (int i = 0; i < ChildCount; i++)
+        {
+            m_Pieces[i].PiecePosInit();
+        }
+
+        GameManager.Instance.GetARCamera().targetTexture = null;
     }
 
     IEnumerator TakePhoto()  // Start this Coroutine on some button click
