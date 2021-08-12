@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/FishingGame.unity
+- path: Assets/Scenes/1.CI.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

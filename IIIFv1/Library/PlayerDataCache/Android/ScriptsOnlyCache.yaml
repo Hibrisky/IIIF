@@ -6,16 +6,65 @@ ScriptsOnlyBuild:
     - ARFoundationRemote.Runtime.ObjectTrackingLibraries
     - ARFoundationRemote.Runtime.Settings
     Assembly-CSharp.dll:
+    - AudioManager
     - CI
-    - IF_CreateAccount
+    - DragAndDrop
+    - GameManager
+    - IF_AccountConnect
+    - IF_AlarmPopup
+    - IF_CreateNickName
+    - IF_CustomToggle
     - IF_Fishes
     - IF_Fishing
     - IF_FishingGame
+    - IF_FishingGuidePupup
     - IF_FishingRod
     - IF_Loading
     - IF_Main
+    - IF_Main_NotUsed
+    - IF_OptionPopup
+    - IF_PrivacyStatement
+    - IF_PuzzleWindow
+    - IF_QuestList_item
+    - IF_QuestPopup
     - IF_Start
+    - IF_Termsofservice
     - IF_UpdatePopup
+    - PieceScript
+    - PortalsFX2_AxisRotateByTime
+    - PortalsFX2_GrvityPoint
+    - PortalsFX2_Light
+    - ToggleController
+    - UIManager
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
+    Unity.RenderPipelines.Core.Runtime.dll:
+    - UnityEngine.Rendering.UI.DebugUIHandlerBitField
+    - UnityEngine.Rendering.UI.DebugUIHandlerButton
+    - UnityEngine.Rendering.UI.DebugUIHandlerCanvas
+    - UnityEngine.Rendering.UI.DebugUIHandlerColor
+    - UnityEngine.Rendering.UI.DebugUIHandlerContainer
+    - UnityEngine.Rendering.UI.DebugUIHandlerEnumField
+    - UnityEngine.Rendering.UI.DebugUIHandlerEnumHistory
+    - UnityEngine.Rendering.UI.DebugUIHandlerFloatField
+    - UnityEngine.Rendering.UI.DebugUIHandlerFoldout
+    - UnityEngine.Rendering.UI.DebugUIHandlerGroup
+    - UnityEngine.Rendering.UI.DebugUIHandlerHBox
+    - UnityEngine.Rendering.UI.DebugUIHandlerIndirectFloatField
+    - UnityEngine.Rendering.UI.DebugUIHandlerIndirectToggle
+    - UnityEngine.Rendering.UI.DebugUIHandlerIntField
+    - UnityEngine.Rendering.UI.DebugUIHandlerPanel
+    - UnityEngine.Rendering.UI.DebugUIHandlerPersistentCanvas
+    - UnityEngine.Rendering.UI.DebugUIHandlerRow
+    - UnityEngine.Rendering.UI.DebugUIHandlerToggle
+    - UnityEngine.Rendering.UI.DebugUIHandlerToggleHistory
+    - UnityEngine.Rendering.UI.DebugUIHandlerUIntField
+    - UnityEngine.Rendering.UI.DebugUIHandlerVBox
+    - UnityEngine.Rendering.UI.DebugUIHandlerValue
+    - UnityEngine.Rendering.UI.DebugUIHandlerVector2
+    - UnityEngine.Rendering.UI.DebugUIHandlerVector3
+    - UnityEngine.Rendering.UI.DebugUIHandlerVector4
+    - UnityEngine.Rendering.UI.UIFoldout
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.ARCore.Editor.dll:
@@ -25,10 +74,13 @@ ScriptsOnlyBuild:
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
+    - UnityEngine.XR.ARFoundation.ARFaceManager
     - UnityEngine.XR.ARFoundation.ARInputManager
+    - UnityEngine.XR.ARFoundation.ARPlaneManager
     - UnityEngine.XR.ARFoundation.ARPoseDriver
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
+    - UnityEngine.XR.ARFoundation.ARTrackedImageManager
     Unity.XR.ARSubsystems.dll:
     - UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
     Unity.XR.Management.Editor.dll:
@@ -54,8 +106,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -64,7 +118,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/FishingGame.unity:
+    Assets/Scenes/1.CI.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -85,10 +139,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
-    - Class: 61
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -106,75 +156,177 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1532}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1534}
+      Script: {instanceID: 1586}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 1538}
+      Script: {instanceID: 1590}
     - Class: 114
-      Script: {instanceID: 1696}
+      Script: {instanceID: 1592}
     - Class: 114
-      Script: {instanceID: 1768}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1898}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 2356}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2460}
+      Script: {instanceID: 1850}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 1930}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2736}
+      Script: {instanceID: 2362}
     - Class: 114
-      Script: {instanceID: 2798}
+      Script: {instanceID: 2556}
     - Class: 114
-      Script: {instanceID: 2956}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 2966}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 3064}
+      Script: {instanceID: 3028}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3230}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3218}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3350}
+    - Class: 114
+      Script: {instanceID: 3462}
+    - Class: 114
+      Script: {instanceID: 3466}
     - Class: 114
       Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3562}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3660}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 3690}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3844}
+      Script: {instanceID: 3756}
     - Class: 114
-      Script: {instanceID: 3932}
+      Script: {instanceID: 3762}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 3870}
     - Class: 114
-      Script: {instanceID: 4248}
+      Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4768}
+      Script: {instanceID: 4482}
     - Class: 114
-      Script: {instanceID: 4800}
+      Script: {instanceID: 4490}
     - Class: 114
-      Script: {instanceID: 4816}
+      Script: {instanceID: 4706}
+    - Class: 114
+      Script: {instanceID: 4710}
+    - Class: 114
+      Script: {instanceID: 4712}
+    - Class: 114
+      Script: {instanceID: 4952}
+    - Class: 114
+      Script: {instanceID: 4964}
+    - Class: 114
+      Script: {instanceID: 4980}
+    - Class: 114
+      Script: {instanceID: 5042}
+    - Class: 114
+      Script: {instanceID: 5178}
+    - Class: 114
+      Script: {instanceID: 5228}
+    - Class: 114
+      Script: {instanceID: 5230}
+    - Class: 114
+      Script: {instanceID: 5246}
+    - Class: 114
+      Script: {instanceID: 5266}
+    - Class: 114
+      Script: {instanceID: 5314}
+    - Class: 114
+      Script: {instanceID: 5468}
+    - Class: 114
+      Script: {instanceID: 5564}
+    - Class: 114
+      Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 5692}
+    - Class: 114
+      Script: {instanceID: 5714}
+    - Class: 114
+      Script: {instanceID: 5774}
+    - Class: 114
+      Script: {instanceID: 5782}
+    - Class: 114
+      Script: {instanceID: 5826}
+    - Class: 114
+      Script: {instanceID: 5848}
+    - Class: 114
+      Script: {instanceID: 5884}
+    - Class: 114
+      Script: {instanceID: 5926}
+    - Class: 114
+      Script: {instanceID: 5966}
+    - Class: 114
+      Script: {instanceID: 6032}
+    - Class: 114
+      Script: {instanceID: 6042}
+    - Class: 114
+      Script: {instanceID: 6044}
+    - Class: 114
+      Script: {instanceID: 6108}
+    - Class: 114
+      Script: {instanceID: 6148}
+    - Class: 114
+      Script: {instanceID: 6176}
+    - Class: 114
+      Script: {instanceID: 6272}
+    - Class: 114
+      Script: {instanceID: 6304}
+    - Class: 114
+      Script: {instanceID: 6358}
+    - Class: 114
+      Script: {instanceID: 6390}
+    - Class: 114
+      Script: {instanceID: 6426}
+    - Class: 114
+      Script: {instanceID: 6440}
+    - Class: 114
+      Script: {instanceID: 6558}
+    - Class: 114
+      Script: {instanceID: 6564}
+    - Class: 114
+      Script: {instanceID: 6704}
+    - Class: 114
+      Script: {instanceID: 6970}
+    - Class: 114
+      Script: {instanceID: 7046}
+    - Class: 114
+      Script: {instanceID: 7204}
+    - Class: 114
+      Script: {instanceID: 7298}
+    - Class: 114
+      Script: {instanceID: 7438}
+    - Class: 114
+      Script: {instanceID: 7470}
+    - Class: 114
+      Script: {instanceID: 7526}
+    - Class: 114
+      Script: {instanceID: 7676}
+    - Class: 114
+      Script: {instanceID: 7698}
+    - Class: 114
+      Script: {instanceID: 7734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -182,6 +334,63 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 210
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 331
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/2.Login.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1586}
+    - Class: 114
+      Script: {instanceID: 1592}
+    - Class: 114
+      Script: {instanceID: 2556}
+    - Class: 114
+      Script: {instanceID: 5564}
+    - Class: 114
+      Script: {instanceID: 6032}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -195,13 +404,48 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/3.InGame.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2556}
+    - Class: 114
+      Script: {instanceID: 4482}
+    - Class: 114
+      Script: {instanceID: 4710}
+    - Class: 114
+      Script: {instanceID: 6032}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 210
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 331
+      Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
@@ -210,28 +454,34 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
   - hash:
       serializedVersion: 2
-      Hash: 824e8d4cb47ffd88ddf959dbd4526585
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DynamicJoystick
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: 24c74cc0d527a06113f2b967042769f0
-    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
-    namespaceName: UnityEditor.XR.LegacyInputHelpers
-    className: CameraOffset
+      Hash: 040dd48e3a027d5424519a5fa2009df4
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: f69dfc6409fbbd89d3689368e99688a8
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector2
   - hash:
       serializedVersion: 2
       Hash: e8733e39efa851172df1c9eaef062265
@@ -240,34 +490,22 @@ ScriptsOnlyBuild:
     className: ARPlane
   - hash:
       serializedVersion: 2
-      Hash: 5ab533713adae59372fb3e10a585c186
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
       Hash: 04e4a8b0447477cc4e933d9e5311188f
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: ArmModel
   - hash:
       serializedVersion: 2
-      Hash: 77aaaaa51f7a8d8ff333a879741e47d2
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_InputField
+      Hash: ca0b8ad3987cd33b3209a508b6e1562e
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: FreeCamera
   - hash:
       serializedVersion: 2
-      Hash: 52bcb9c2a78bdd8d98a59e915c346e75
-    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
-    namespaceName: UnityEngine.XR.LegacyInputHelpers
-    className: TransitionArmModel
-  - hash:
-      serializedVersion: 2
-      Hash: a2c3fa89115cbdf7516e6f45c22aaf11
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_VirtualPad
+      Hash: 19209916e2ccd9325109364cfb90fb0d
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXInputButtonBinder
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -288,18 +526,6 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ARFoundationRemote.RuntimeEditor.dll
-    namespaceName: ARFoundationRemote.RuntimeEditor
-    className: OriginDataSender
-  - hash:
-      serializedVersion: 2
-      Hash: 75c4c07e1d8a8a109f34c6b72a78d686
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PuzzleManager
-  - hash:
-      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -312,40 +538,16 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
-  - hash:
-      serializedVersion: 2
-      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Joystick
-  - hash:
-      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.RuntimeEditor
-    className: TelepathyReceiverConnection
-  - hash:
-      serializedVersion: 2
-      Hash: f0786811516f7de8befd7a3e181e567a
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_FontAsset
+      Hash: 5301f41c3020a1ff445fc5d0d95587da
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_PrivacyStatement
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -366,40 +568,22 @@ ScriptsOnlyBuild:
     className: ARPointCloudMeshVisualizer
   - hash:
       serializedVersion: 2
-      Hash: a020ccc275cd9bdb543d1916b1778e82
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIManager
-  - hash:
-      serializedVersion: 2
-      Hash: 0abd5af4e7c8c2bf45458cb728fec492
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: PointCloudManagerSender
-  - hash:
-      serializedVersion: 2
-      Hash: 84100134338efbe002d88f3cf3e377a3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_JigsawPuzzle
-  - hash:
-      serializedVersion: 2
       Hash: ce669872a2be11bc686ea22961d8a3bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FixedJoystick
   - hash:
       serializedVersion: 2
-      Hash: 5cb8f11a20f6f479ee6f141540a8061b
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: 
-    className: SwitchBetweenPlaneAndFaceDetection
+      Hash: ac69b92ef99cdb8fb961e5a79c8e705a
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXUIDropdownBinder
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: GroupTrack
+      Hash: 864703ed79e5ae88978fb890aa1b8557
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_ActivatonDelay
   - hash:
       serializedVersion: 2
       Hash: 524a8f7c9b60f50a1c6bbe7185c0207e
@@ -438,16 +622,10 @@ ScriptsOnlyBuild:
     className: IF_Gyro
   - hash:
       serializedVersion: 2
-      Hash: 21168a04ae131d1b871abdbe2c64524a
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Examples
-    className: ARKitObjectTrackingExample
-  - hash:
-      serializedVersion: 2
-      Hash: dc1bf7169b005112f7a4da5a6b15f0c4
-    assemblyName: Unity.XR.ARKit.dll
-    namespaceName: UnityEngine.XR.ARKit
-    className: ARKitReferenceObjectEntry
+      Hash: b7e9193a7328bce8ce554404eac3533b
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXVelocityBinder
   - hash:
       serializedVersion: 2
       Hash: a40b91b4a3e10a809914e80594f98254
@@ -462,10 +640,10 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ARFoundationRemote.RuntimeEditor.dll
-    namespaceName: ARFoundationRemote.RuntimeEditor
-    className: OnRenderImageCallback
+      Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerToggle
   - hash:
       serializedVersion: 2
       Hash: 9b6303c7164a38e06044ec2036c18b6b
@@ -480,46 +658,22 @@ ScriptsOnlyBuild:
     className: IF_PlayerMove
   - hash:
       serializedVersion: 2
-      Hash: be505e69fe76e48944a0ce124a140b5c
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Examples
-    className: CpuImagesExample
-  - hash:
-      serializedVersion: 2
-      Hash: 2d7cd50f41c70b77ce63d7c7f351e5a5
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: ToggleFacesVisibility
-  - hash:
-      serializedVersion: 2
-      Hash: 653ab7b51c9a0552c1e57f294324ea46
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Examples
-    className: AnchorsExample
-  - hash:
-      serializedVersion: 2
       Hash: c9e8c11fa035437d5f9e94ee74660765
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IF_Loading
   - hash:
       serializedVersion: 2
-      Hash: 5f170942ee57c7a568f5bcfc7521adea
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: EnumerableTestState
+      Hash: 51b05e403ce1da1805851f42af02f4bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerGroup
   - hash:
       serializedVersion: 2
-      Hash: a1aa98c78061c6f03a8c124cda576e67
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: 37a13922678947e6d144f41a7195154a
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARCameraManager
+      Hash: 294081b4a58e27c39341d501e3609aa7
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXVisibilityEventBinder
   - hash:
       serializedVersion: 2
       Hash: 731022d9a07335d3fe34d68eb2430d8b
@@ -534,46 +688,10 @@ ScriptsOnlyBuild:
     className: ARFace
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: DontDestroyOnLoadSingleton
-  - hash:
-      serializedVersion: 2
-      Hash: 0bc941f7c0f0c1747db6798c17abb95b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_CameraMove
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: TouchInputSender
-  - hash:
-      serializedVersion: 2
-      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: AspectRatioFitter
-  - hash:
-      serializedVersion: 2
-      Hash: ebd6bb681edcc7ba584f328832d40454
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: EditorViewReceiver
-  - hash:
-      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
-  - hash:
-      serializedVersion: 2
-      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARTrackedObject
   - hash:
       serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
@@ -594,40 +712,16 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 162fd995c2d006bb4a5e08f51616796d
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: MeshSubsystemSender
-  - hash:
-      serializedVersion: 2
-      Hash: 760787567e1b60d64a3e421ab83ee14a
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TextMeshProUGUI
-  - hash:
-      serializedVersion: 2
-      Hash: 40d54ea89db30d13add9501d76c0b312
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_Battle
-  - hash:
-      serializedVersion: 2
-      Hash: 773b3b877438d7a7c9ee9988f62ba502
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: Settings
-  - hash:
-      serializedVersion: 2
       Hash: 335b9bbcbaee363087251f3eefb69a4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IF_CustomView
   - hash:
       serializedVersion: 2
-      Hash: 75553eb875722da1f44dac6bdebd8c59
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Examples
-    className: MeshingExample
+      Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerWidget
   - hash:
       serializedVersion: 2
       Hash: 0c5108545fb925730d4d5887ebcdd20c
@@ -636,16 +730,16 @@ ScriptsOnlyBuild:
     className: XRReferenceObjectLibrary
   - hash:
       serializedVersion: 2
-      Hash: 317e1390dcab15e0d44a4ef0ec8d9684
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_Fishing
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: b7e9193a7328bce8ce554404eac3533b
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXPlaneBinder
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -666,16 +760,10 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 8f795a9712b95e97145468f753ed2de3
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: ARKitHumanSegmentationExample
-  - hash:
-      serializedVersion: 2
-      Hash: 1b772c809cde747244c107ee0e9c10ab
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: UnityEngine.XR.ARFoundation.Samples
-    className: ToggleMeshClassificationFixed
+      Hash: be282626f18c44708e0d2e7409d9814e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_Termsofservice
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -684,22 +772,16 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 9e27f44bbf48228f203a37254d40f8ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickSetterExample
-  - hash:
-      serializedVersion: 2
-      Hash: 8f795a9712b95e97145468f753ed2de3
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: EnvironmentOcclusionExample
-  - hash:
-      serializedVersion: 2
       Hash: 1268406d3f2e4b2c2b670b560b6db769
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: AREnvironmentProbeManager
+  - hash:
+      serializedVersion: 2
+      Hash: e571e0e5778ec982e99868623decff7a
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXUIToggleBinder
   - hash:
       serializedVersion: 2
       Hash: de8c2a257a183731115d08b34b7bd746
@@ -708,46 +790,22 @@ ScriptsOnlyBuild:
     className: AROcclusionManager
   - hash:
       serializedVersion: 2
-      Hash: 748dd2a2a28da4e618912da5ac45684b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: StandaloneInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: f7858108331b563fb41b80b729297acd
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Scrollbar
-  - hash:
-      serializedVersion: 2
-      Hash: 5dea360fb0b147724ac344e6f399c2f3
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_SubMesh
-  - hash:
-      serializedVersion: 2
       Hash: 8731bba0c073f3b5320dc7a644766bae
     assemblyName: ARFoundationRemote.Runtime.dll
     namespaceName: UnityEngine.XR.ARFoundation.Samples
     className: MeshClassificationFrackingFixed
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: MarkerTrack
+      Hash: e157fd8f2204c0885724771597871c93
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_ShaderColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 8e6ceabfd38a184413d69b7db56c89cc
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: BeforeAfterTestCommandState
-  - hash:
-      serializedVersion: 2
-      Hash: d62ec461222feffaaf0194c6612f4b06
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: UnityEngine.XR.ARFoundation.Samples
-    className: ARWorldMapControllerFixed
+      Hash: 9996502011724cec32dcdbd5bed3cc6c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoginTEst
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -756,40 +814,16 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 16dacd04869a876ea4bea0d1d2e77e34
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARPointCloudManager
-  - hash:
-      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: AREnvironmentProbe
-  - hash:
-      serializedVersion: 2
-      Hash: b5f0ac93229a76cf8900d97ae6adbe48
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_UpdatePopup
-  - hash:
-      serializedVersion: 2
-      Hash: 96ad17a255aacc82aa62ac92f6f7c961
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: Sender
-  - hash:
-      serializedVersion: 2
-      Hash: 4fd8bf02e3089425d3502e26c44ba31a
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TextContainer
+      Hash: 1414994e65692963ad7b4feee9efe622
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXInputMouseBinder
   - hash:
       serializedVersion: 2
       Hash: 7fc66ccdedcbf4ab697bfe6b657a15ac
@@ -798,16 +832,28 @@ ScriptsOnlyBuild:
     className: IF_Start
   - hash:
       serializedVersion: 2
+      Hash: ab74319876b0c8a7d1444f0e170d9233
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXPropertyBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerEnumField
+  - hash:
+      serializedVersion: 2
+      Hash: 8eb928a2611b4878073d5fb44b9ca83f
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: 
+    className: VisualEffectActivationClip
+  - hash:
+      serializedVersion: 2
       Hash: 5883d65d8482456fce6ebfc77d1e2fc3
     assemblyName: ARFoundationRemote.Runtime.dll
     namespaceName: ARFoundationRemote.Examples
     className: MultiTouchRaycastExample
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARPoseDriver
   - hash:
       serializedVersion: 2
       Hash: cbe6deff75fc0987595a61e9510f7917
@@ -822,34 +868,22 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 1d9b53318825332126b0fd6da2d962fb
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARAnchorManager
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IF_Monster
   - hash:
       serializedVersion: 2
-      Hash: f918929053ab937a92599d4f59fa4188
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: SetupARFoundationVersionSpecificComponents
+      Hash: 2388eb9e99b86b3813e7b6dbfe4b3e0c
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerContainer
   - hash:
       serializedVersion: 2
-      Hash: caa533b001ae39b864ba8425019e2268
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: PlayableTrack
+      Hash: 355d3563a3049f9542c9bb928a59e4b4
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXInputTouchBinder
   - hash:
       serializedVersion: 2
       Hash: bac6a659a57881e37417a66e827e654a
@@ -870,22 +904,10 @@ ScriptsOnlyBuild:
     className: LocationServicesExample
   - hash:
       serializedVersion: 2
-      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: VerticalLayoutGroup
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
-  - hash:
-      serializedVersion: 2
-      Hash: d251bf88db6c95a6b1aa0b69298da9ef
-    assemblyName: UnityEngine.SpatialTracking.dll
-    namespaceName: UnityEngine.SpatialTracking
-    className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -906,22 +928,16 @@ ScriptsOnlyBuild:
     className: IF_TextureDivide
   - hash:
       serializedVersion: 2
-      Hash: 4e1145702513b114ef53a36466e8a5aa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_FishingGame
+      Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVBox
   - hash:
       serializedVersion: 2
       Hash: 2b9fea5115e12a33bea255b424309580
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IF_CameraControl
-  - hash:
-      serializedVersion: 2
-      Hash: 18c222bef9ae745ce69ddde9b74337ca
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
       Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
@@ -937,12 +953,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: PlayModeRunnerCallback
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: ARFoundationRemote.Runtime.dll
     namespaceName: ARFoundationRemote.Runtime
     className: CameraPoseSender
@@ -952,12 +962,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: PositionAsUV1
   - hash:
       serializedVersion: 2
       Hash: d1e5dcdf26bd8302b73d5a32dda311de
@@ -972,16 +976,22 @@ ScriptsOnlyBuild:
     className: XRManagerSettings
   - hash:
       serializedVersion: 2
-      Hash: e78c8cb8e96d6f8314b1dec201df8de0
+      Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerToggleHistory
+  - hash:
+      serializedVersion: 2
+      Hash: 90406663995b049e735ed10d95717ead
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
   - hash:
       serializedVersion: 2
-      Hash: 87ff43d2baf3385cba327d8f803a4ebb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: AudioPlayableAsset
+      Hash: d377889e18743c12f2e23ab5ca92b785
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_QuestPopup
   - hash:
       serializedVersion: 2
       Hash: 7f5c55cb7b3151ce240452eb85500d32
@@ -990,46 +1000,10 @@ ScriptsOnlyBuild:
     className: ARPlaneManager
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
-    className: RemoteTestResultSender
-  - hash:
-      serializedVersion: 2
-      Hash: 134322c9293c1896357cce271b819ce4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FloatingJoystick
-  - hash:
-      serializedVersion: 2
       Hash: 625e4fd6f88b90d1ee9e7c089c3f450d
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARSession
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.ARKit.dll
-    namespaceName: UnityEngine.XR.ARKit
-    className: ARKitLoaderSettings
-  - hash:
-      serializedVersion: 2
-      Hash: a81d4c2c1cf3ad164d277d927a193679
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Dropdown
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARBackgroundRendererFeature
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -1050,10 +1024,10 @@ ScriptsOnlyBuild:
     className: ARKitLoader
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: SignalTrack
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX
+    className: IncrementStripIndexOnStart
   - hash:
       serializedVersion: 2
       Hash: 84d116771b8d5c43910ee289a33301a8
@@ -1062,34 +1036,22 @@ ScriptsOnlyBuild:
     className: PieceGenerator
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.ARCore.dll
-    namespaceName: UnityEngine.XR.ARCore
-    className: ARCoreLoader
-  - hash:
-      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: e1c35cdce946e9da77fe80a39c261608
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARSessionOrigin
+      Hash: aa08ba09e7606b4937f0ec7fad706065
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_AlarmPopup
   - hash:
       serializedVersion: 2
-      Hash: 7a16eb22bc6d4b8dccc6cf609c5f5027
-    assemblyName: ARFoundationRemote.RuntimeEditor.dll
-    namespaceName: ARFoundationRemote.RuntimeEditor
-    className: CaptureDepthAndColorTexture
-  - hash:
-      serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: ControlTrack
+      Hash: 9ac327467393cb6c8045a2fd90ff67e2
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerPersistentCanvas
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -1104,12 +1066,6 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 040dd48e3a027d5424519a5fa2009df4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: ScrollRect
-  - hash:
-      serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -1120,6 +1076,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: dc7d6d23f98136088436d7501ae3f8e8
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXHierarchyAttributeMapBinder
   - hash:
       serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
@@ -1134,10 +1096,10 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: TouchInputReceiver
+      Hash: cd1e91f5afed259a1512bbf18dc12bd7
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: 
+    className: SceneRenderPipeline
   - hash:
       serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
@@ -1170,12 +1132,6 @@ ScriptsOnlyBuild:
     className: JoystickPlayerExample
   - hash:
       serializedVersion: 2
-      Hash: 893dbdbfe611d62e230a686ea89f1efd
-    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
-    namespaceName: UnityEngine.XR.LegacyInputHelpers
-    className: SwingArmModel
-  - hash:
-      serializedVersion: 2
       Hash: 01473135d671a71d740e507b04eb93da
     assemblyName: Unity.XR.ARSubsystems.dll
     namespaceName: UnityEngine.XR.ARSubsystems
@@ -1188,10 +1144,22 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerEnumHistory
+  - hash:
+      serializedVersion: 2
       Hash: 1bc03a501323d00d0037a6b76d25a3ba
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARMeshManager
+  - hash:
+      serializedVersion: 2
+      Hash: b7e9193a7328bce8ce554404eac3533b
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXTransformBinder
   - hash:
       serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
@@ -1207,12 +1175,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARPlaneMeshVisualizer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: ARFoundationRemote.RuntimeEditor.dll
     namespaceName: ARFoundationRemote.RuntimeEditor
     className: Receiver
@@ -1222,12 +1184,6 @@ ScriptsOnlyBuild:
     assemblyName: ARFoundationRemote.Runtime.dll
     namespaceName: ARFoundationRemote.Runtime
     className: AnchorSubsystemSender
-  - hash:
-      serializedVersion: 2
-      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
-    assemblyName: Unity.TextMeshPro.dll
-    namespaceName: TMPro
-    className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
       Hash: a69c09b806c641460804caf11c577058
@@ -1242,16 +1198,10 @@ ScriptsOnlyBuild:
     className: ARAnchor
   - hash:
       serializedVersion: 2
-      Hash: d39905ff8fda75afed4d688761c322e1
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARFaceManager
-  - hash:
-      serializedVersion: 2
-      Hash: c1aa24dc179be0cb7c6d49f66fc0db8a
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARRaycastManager
+      Hash: 7d1a3e12579b7bd0f94909057ffba8d0
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: CameraSwitcher
   - hash:
       serializedVersion: 2
       Hash: a68aecf6c9e0449e5edd4945954a1a10
@@ -1266,28 +1216,16 @@ ScriptsOnlyBuild:
     className: DragAndDrop
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX
+    className: SetSpawnTime
+  - hash:
+      serializedVersion: 2
       Hash: 0535c7e7c34dd1cdfc5b1f8ffce1aebe
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedImageManager
-  - hash:
-      serializedVersion: 2
-      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARPointCloud
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Unity.XR.ARFoundation.dll
-    namespaceName: UnityEngine.XR.ARFoundation
-    className: ARFaceMeshVisualizer
-  - hash:
-      serializedVersion: 2
-      Hash: 8220b46879dc5e37db1b940c938f5744
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: SignalEmitter
   - hash:
       serializedVersion: 2
       Hash: b290e72ff001ef7bc7d20d42045ea869
@@ -1308,22 +1246,10 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 8e609fc31cd045d799ee9266a362e43b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_ObjectRotation
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: ARFoundationRemote.Runtime.dll
     namespaceName: ARFoundationRemote.Examples
     className: ReloadScene
-  - hash:
-      serializedVersion: 2
-      Hash: 3b5e1075bc75062390ae7150e3a40485
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IF_CreateAccount
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -1332,22 +1258,10 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: a27054022acd91872c068254b72ca801
+      Hash: e27b735a4c23d5ad66a5cc254808d0db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: IF_FishingRod
-  - hash:
-      serializedVersion: 2
-      Hash: abf1930d8126d0b2e00e9449129a0190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 54d23eca49321334ab820e4c09d019c0
-    assemblyName: ARFoundationRemote.Runtime.dll
-    namespaceName: ARFoundationRemote.Runtime
-    className: ObjectTrackingLibraries
+    className: IF_OptionPopup
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1365,8 +1279,904 @@ ScriptsOnlyBuild:
       Hash: 61b21b09c089be525ba18d2c29a7dd78
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: IF_Main_NotUsed
+  - hash:
+      serializedVersion: 2
+      Hash: 53b8d4d85e2bc3c3c568098b4c5c40d4
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXTerrainBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 24c74cc0d527a06113f2b967042769f0
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEditor.XR.LegacyInputHelpers
+    className: CameraOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 4d51d5ccf37d2089bdfe827617b784ff
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: VolumeProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 77aaaaa51f7a8d8ff333a879741e47d2
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 52bcb9c2a78bdd8d98a59e915c346e75
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: TransitionArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: a2c3fa89115cbdf7516e6f45c22aaf11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_VirtualPad
+  - hash:
+      serializedVersion: 2
+      Hash: b7e9193a7328bce8ce554404eac3533b
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXPositionBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ARFoundationRemote.RuntimeEditor.dll
+    namespaceName: ARFoundationRemote.RuntimeEditor
+    className: OriginDataSender
+  - hash:
+      serializedVersion: 2
+      Hash: 4d60f10c9b0656079e1aeb487f3e6cac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PuzzleManager
+  - hash:
+      serializedVersion: 2
+      Hash: da14535bb05f94583c7536a845dfa9f6
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXMouseEventBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
+  - hash:
+      serializedVersion: 2
+      Hash: 7dbf450932234158be58ca2027563dcb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector3
+  - hash:
+      serializedVersion: 2
+      Hash: d57f1a3f522cf512849faec5b4d077c9
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXLightBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.RuntimeEditor
+    className: TelepathyReceiverConnection
+  - hash:
+      serializedVersion: 2
+      Hash: f0786811516f7de8befd7a3e181e567a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerIndirectToggle
+  - hash:
+      serializedVersion: 2
+      Hash: a020ccc275cd9bdb543d1916b1778e82
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 0abd5af4e7c8c2bf45458cb728fec492
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: PointCloudManagerSender
+  - hash:
+      serializedVersion: 2
+      Hash: 84100134338efbe002d88f3cf3e377a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_JigsawPuzzle
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerUIntField
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerFloatField
+  - hash:
+      serializedVersion: 2
+      Hash: 5cb8f11a20f6f479ee6f141540a8061b
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: 
+    className: SwitchBetweenPlaneAndFaceDetection
+  - hash:
+      serializedVersion: 2
+      Hash: df819f0bc77c8d047eca1df91bbaa90d
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerPanel
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 1071eeb96eec01e2e42301f95412b1c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_Light
+  - hash:
+      serializedVersion: 2
+      Hash: 82b3440521b0d869378b2ca5ee0ef094
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef1571615d18f8daeb0045ded2aa19d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_DemoGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 21168a04ae131d1b871abdbe2c64524a
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Examples
+    className: ARKitObjectTrackingExample
+  - hash:
+      serializedVersion: 2
+      Hash: dc1bf7169b005112f7a4da5a6b15f0c4
+    assemblyName: Unity.XR.ARKit.dll
+    namespaceName: UnityEngine.XR.ARKit
+    className: ARKitReferenceObjectEntry
+  - hash:
+      serializedVersion: 2
+      Hash: a64b8ff703a69f3352c424e9d0bc1c49
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: VolumeComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ARFoundationRemote.RuntimeEditor.dll
+    namespaceName: ARFoundationRemote.RuntimeEditor
+    className: OnRenderImageCallback
+  - hash:
+      serializedVersion: 2
+      Hash: be505e69fe76e48944a0ce124a140b5c
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Examples
+    className: CpuImagesExample
+  - hash:
+      serializedVersion: 2
+      Hash: 2d7cd50f41c70b77ce63d7c7f351e5a5
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: ToggleFacesVisibility
+  - hash:
+      serializedVersion: 2
+      Hash: 653ab7b51c9a0552c1e57f294324ea46
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Examples
+    className: AnchorsExample
+  - hash:
+      serializedVersion: 2
+      Hash: 6b3057497eb6f0e52612476af702bf8c
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: UIFoldout
+  - hash:
+      serializedVersion: 2
+      Hash: 5f170942ee57c7a568f5bcfc7521adea
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: EnumerableTestState
+  - hash:
+      serializedVersion: 2
+      Hash: f4c02471dcd9f0ddb8c322a1a0beade6
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXTriggerEventBinder
+  - hash:
+      serializedVersion: 2
+      Hash: a1aa98c78061c6f03a8c124cda576e67
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 37a13922678947e6d144f41a7195154a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARCameraManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: DontDestroyOnLoadSingleton
+  - hash:
+      serializedVersion: 2
+      Hash: 0bc941f7c0f0c1747db6798c17abb95b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_CameraMove
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: TouchInputSender
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: ebd6bb681edcc7ba584f328832d40454
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: EditorViewReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 8235c776d42385d02652de49aaa7fba8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_PuzzleGuidePupup
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedObject
+  - hash:
+      serializedVersion: 2
+      Hash: 162fd995c2d006bb4a5e08f51616796d
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: MeshSubsystemSender
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerValue
+  - hash:
+      serializedVersion: 2
+      Hash: 760787567e1b60d64a3e421ab83ee14a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 40d54ea89db30d13add9501d76c0b312
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_Battle
+  - hash:
+      serializedVersion: 2
+      Hash: 773b3b877438d7a7c9ee9988f62ba502
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerHBox
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerIntField
+  - hash:
+      serializedVersion: 2
+      Hash: 3e9ee40f7befdfcd2be55ebcd423ab80
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_MouseOrbit
+  - hash:
+      serializedVersion: 2
+      Hash: 75553eb875722da1f44dac6bdebd8c59
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Examples
+    className: MeshingExample
+  - hash:
+      serializedVersion: 2
+      Hash: 414f30c7ce816b8dfd2aa50e765a810c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_Fishing
+  - hash:
+      serializedVersion: 2
+      Hash: dab730eb45e5e2c109198fbd7f90d208
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraMove
+  - hash:
+      serializedVersion: 2
+      Hash: 2801c4d734a378c5fc7a6bee8df674a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_QuestList_item
+  - hash:
+      serializedVersion: 2
+      Hash: bb6b9a25e695d7981ce2d853a697a828
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerVector4
+  - hash:
+      serializedVersion: 2
+      Hash: 8f795a9712b95e97145468f753ed2de3
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: ARKitHumanSegmentationExample
+  - hash:
+      serializedVersion: 2
+      Hash: 1b772c809cde747244c107ee0e9c10ab
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: UnityEngine.XR.ARFoundation.Samples
+    className: ToggleMeshClassificationFixed
+  - hash:
+      serializedVersion: 2
+      Hash: 8d35f16c5022311c6f4d9432be73bfcf
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerIndirectFloatField
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
+  - hash:
+      serializedVersion: 2
+      Hash: 8f795a9712b95e97145468f753ed2de3
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: EnvironmentOcclusionExample
+  - hash:
+      serializedVersion: 2
+      Hash: b7d58df3c6d92c60e3611c0a808aa0dc
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerBitField
+  - hash:
+      serializedVersion: 2
+      Hash: 578947f2ad4fd774c77785510206933c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_ShaderFloatCurve
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: f7858108331b563fb41b80b729297acd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: e7af2ee867c4472507ae496007ae258d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_AxisRotateByTime
+  - hash:
+      serializedVersion: 2
+      Hash: 17bec6a04fdc57dd343c6607198eda8d
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXInputKeyBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 5dea360fb0b147724ac344e6f399c2f3
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8e6ceabfd38a184413d69b7db56c89cc
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: fe3285e3cd64d8bdcfdc41bae76ad618
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_AccountConnect
+  - hash:
+      serializedVersion: 2
+      Hash: d62ec461222feffaaf0194c6612f4b06
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: UnityEngine.XR.ARFoundation.Samples
+    className: ARWorldMapControllerFixed
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: DebugUpdater
+  - hash:
+      serializedVersion: 2
+      Hash: 89229a620f85ef21de336ab85a13d351
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 16dacd04869a876ea4bea0d1d2e77e34
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudManager
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: AREnvironmentProbe
+  - hash:
+      serializedVersion: 2
+      Hash: b5f0ac93229a76cf8900d97ae6adbe48
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_UpdatePopup
+  - hash:
+      serializedVersion: 2
+      Hash: 96ad17a255aacc82aa62ac92f6f7c961
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: Sender
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_KakaoLogin
+  - hash:
+      serializedVersion: 2
+      Hash: f79e983672d079ff24eee15484fb74b8
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerColor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: 1d9b53318825332126b0fd6da2d962fb
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARAnchorManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4927500d4bedc3acdda16387bb141c2d
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXMultiplePositionBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 6e9b489fa29fe7ed5232028c213e5658
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: IF_Main
+  - hash:
+      serializedVersion: 2
+      Hash: f918929053ab937a92599d4f59fa4188
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: SetupARFoundationVersionSpecificComponents
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_Permission
+  - hash:
+      serializedVersion: 2
+      Hash: 36025d42bf23fda83a55bf1429201821
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerRow
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f9a3e4d13e72e064540e7571990f25cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_PuzzleWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: b7e9193a7328bce8ce554404eac3533b
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXPreviousPositionBinder
+  - hash:
+      serializedVersion: 2
+      Hash: d251bf88db6c95a6b1aa0b69298da9ef
+    assemblyName: UnityEngine.SpatialTracking.dll
+    namespaceName: UnityEngine.SpatialTracking
+    className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: ba1e39ff262662ee47d0bec8b3d59fa4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_FishingGame
+  - hash:
+      serializedVersion: 2
+      Hash: 569daf37e0f904fb55839c24e6984deb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToggleController
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: 87ff43d2baf3385cba327d8f803a4ebb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 134322c9293c1896357cce271b819ce4
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARKit.dll
+    namespaceName: UnityEngine.XR.ARKit
+    className: ARKitLoaderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: a81d4c2c1cf3ad164d277d927a193679
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARBackgroundRendererFeature
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX
+    className: LoopAndDelay
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5142114d646f2b61a9ea0200c5bb3549
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXAudioSpectrumBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX
+    className: SpawnOverDistance
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoader
+  - hash:
+      serializedVersion: 2
+      Hash: d9258f94dfe2bbde6e720b45c43d59bd
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXSphereBinder
+  - hash:
+      serializedVersion: 2
+      Hash: e1c35cdce946e9da77fe80a39c261608
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARSessionOrigin
+  - hash:
+      serializedVersion: 2
+      Hash: 7a16eb22bc6d4b8dccc6cf609c5f5027
+    assemblyName: ARFoundationRemote.RuntimeEditor.dll
+    namespaceName: ARFoundationRemote.RuntimeEditor
+    className: CaptureDepthAndColorTexture
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 9069d3779fec1207fa22e0bce2cc3c57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_FishingGuidePupup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: TouchInputReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: 
+    className: VisualEffectActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 893dbdbfe611d62e230a686ea89f1efd
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: SwingArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 569daf37e0f904fb55839c24e6984deb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_CustomToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 0a3fa1a367fddc65eb32515029503334
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerButton
+  - hash:
+      serializedVersion: 2
+      Hash: 2078720c69e8d5757058a91beaa4f339
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXEnabledBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlaneMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 8c328a0ffa03c1bcb9332bb39f4f8453
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering
+    className: Volume
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_GPS
+  - hash:
+      serializedVersion: 2
+      Hash: d39905ff8fda75afed4d688761c322e1
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFaceManager
+  - hash:
+      serializedVersion: 2
+      Hash: a92a881b244ed73c1cfb897c107ecca0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PortalsFX2_GrvityPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 144b85a6fd9b3bbcfef48a3cff6761e2
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXUISliderBinder
+  - hash:
+      serializedVersion: 2
+      Hash: c1aa24dc179be0cb7c6d49f66fc0db8a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARRaycastManager
+  - hash:
+      serializedVersion: 2
+      Hash: 36025d42bf23fda83a55bf1429201821
+    assemblyName: Unity.RenderPipelines.Core.Runtime.dll
+    namespaceName: UnityEngine.Rendering.UI
+    className: DebugUIHandlerFoldout
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloud
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFaceMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 8e609fc31cd045d799ee9266a362e43b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_ObjectRotation
+  - hash:
+      serializedVersion: 2
+      Hash: 3b5e1075bc75062390ae7150e3a40485
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_CreateNickName
+  - hash:
+      serializedVersion: 2
+      Hash: 2a8f2309089482b08d0022b2bbbdb619
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IF_FishingRod
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 321dce969f1704d676527ee15a4ded1e
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXRigidBodyCollisionEventBinder
+  - hash:
+      serializedVersion: 2
+      Hash: 54d23eca49321334ab820e4c09d019c0
+    assemblyName: ARFoundationRemote.Runtime.dll
+    namespaceName: ARFoundationRemote.Runtime
+    className: ObjectTrackingLibraries
+  - hash:
+      serializedVersion: 2
+      Hash: b289b84668e9b7efcf7ed74b86d7eb52
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXInputAxisBinder
+  - hash:
+      serializedVersion: 2
+      Hash: bc15209ab07e93e67c02c130da671410
+    assemblyName: Unity.VisualEffectGraph.Runtime.dll
+    namespaceName: UnityEngine.VFX.Utility
+    className: VFXRaycastBinder
   platform: 13
   scenePathNames:
-  - Assets/Scenes/FishingGame.unity
-  playerPath: C:/Build/VibrateTest.apk
+  - Assets/Scenes/1.CI.unity
+  - Assets/Scenes/2.Login.unity
+  - Assets/Scenes/3.InGame.unity
+  playerPath: C:/Build/FIshTest.apk

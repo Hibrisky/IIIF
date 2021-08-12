@@ -17,8 +17,8 @@ public class IF_Start : MonoBehaviour
     {
         //여기서 구글,IOS연동.
         //Test 플로우
-        UIManager._Instance.CloseUI(this.gameObject);
-        UIManager._Instance.ShowUIPopup(4);
+        UIManager._Instance.CloseUIPopup(this.gameObject);
+        UIManager._Instance.ShowUIPopup(2);
         //GameManager.ShowLoadingBySceneChange("3.InGame");
 
 #if UNITY_EDITOR

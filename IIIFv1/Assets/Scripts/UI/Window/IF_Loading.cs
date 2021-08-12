@@ -47,9 +47,9 @@ public class IF_Loading : MonoBehaviour
         }
         #endregion
 
-
         this.gameObject.SetActive(false);
-        GameManager.CurrSceneName = sceneName;
+        //GameManager.CurrSceneName = sceneName;
+        GameManager.Instance.CurrentSceneCheck(sceneName);
     }
 
 

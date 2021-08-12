@@ -52,6 +52,7 @@ MonoBehaviour:
   Btn_OnPhotoMode: {fileID: 0}
   Btn_OffPhotoMode: {fileID: 0}
   Btn_Shutter: {fileID: 0}
+  Btn_Start: {fileID: 0}
   img_Base: {fileID: 0}
   DeviceName: {fileID: 0}
   fit: {fileID: 0}

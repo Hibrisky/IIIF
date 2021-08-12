@@ -814,7 +814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1064832609
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1382,7 +1382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 128, y: -32.83}
+  m_AnchoredPosition: {x: 128, y: -32.829956}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663485586
@@ -1837,6 +1837,30 @@ PrefabInstance:
       propertyPath: BaitPos
       value: 
       objectReference: {fileID: 578531398}
+    - target: {fileID: 7341864587967301821, guid: babb0b6750a321542800859b1195451d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341864587967301821, guid: babb0b6750a321542800859b1195451d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1079.885
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341864587967301821, guid: babb0b6750a321542800859b1195451d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2422.9534
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341864587967301821, guid: babb0b6750a321542800859b1195451d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341864587967301821, guid: babb0b6750a321542800859b1195451d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341864587967301821, guid: babb0b6750a321542800859b1195451d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 7341864587974222640, guid: babb0b6750a321542800859b1195451d, type: 3}
       propertyPath: m_Name
       value: FishingGame

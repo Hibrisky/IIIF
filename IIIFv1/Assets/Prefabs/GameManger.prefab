@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3309377059897968972}
   - component: {fileID: 3309377059897968973}
   - component: {fileID: 727406536}
+  - component: {fileID: 1039223805}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -48,6 +49,36 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ARCamera: {fileID: 0}
+  m_UserInfo:
+    user_name: 
+    user_point: 0
+  PlaneManager: {fileID: 0}
+  FaceManager: {fileID: 0}
+  ImageTrackingManager: {fileID: 0}
+  PuzzleGroup: {fileID: 0}
+  m_PuzzleInfo:
+  - Arr_Difficulty: {fileID: 0}
+    PuzzleImage:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  PuzzlePortal: {fileID: 0}
+  isPuzzleGameStart: 0
+  Prefab_FishingRod: {fileID: 0}
 --- !u!114 &727406536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,17 +102,20 @@ MonoBehaviour:
   - _UIWindow: {fileID: 1835655657371617531, guid: 637f78b8a513c2f4f8742317f6dd57ac, type: 3}
     _Id: 2
     _IsShow: 0
-  - _UIWindow: {fileID: 6723117238480354057, guid: 4806f6e17b1b01b46810fe422596f672, type: 3}
+  - _UIWindow: {fileID: 6969034368799429108, guid: 50e16085b8d7cfa40afebc1781cb6f6e, type: 3}
     _Id: 3
     _IsShow: 0
   - _UIWindow: {fileID: 4575722185046653135, guid: 599a37a27d1f7d9468a3439562fb367d, type: 3}
     _Id: 4
     _IsShow: 0
+  - _UIWindow: {fileID: 7142653092717658316, guid: e77f6fdf7835f9a47b754f761c18b968, type: 3}
+    _Id: 5
+    _IsShow: 0
   UIPopupList:
   - _UIPopup: {fileID: 4181657602839860957, guid: a8334e983f86b32428817d967a058d9a, type: 3}
     _Id: 0
     _IsShow: 0
-  - _UIPopup: {fileID: 4857374456307903274, guid: 504986907b92a4b43be513686a71bceb, type: 3}
+  - _UIPopup: {fileID: 8264628660842374419, guid: 6a6f7f2ae7c4a0b40ba50aca951a295d, type: 3}
     _Id: 1
     _IsShow: 0
   - _UIPopup: {fileID: 7909068814621637141, guid: 7e20b4083266c0147b6ed1116a304d11, type: 3}
@@ -93,3 +127,34 @@ MonoBehaviour:
   - _UIPopup: {fileID: 3164379917724291288, guid: fc8510aaf5f57454d9e626de77943b2c, type: 3}
     _Id: 4
     _IsShow: 0
+  - _UIPopup: {fileID: 1395049527578319155, guid: b18cd0ac54d27ef4eb2946656c78ab61, type: 3}
+    _Id: 5
+    _IsShow: 0
+  - _UIPopup: {fileID: 1864139727747582835, guid: 7101d84a83f0313469ce1ae7c7a9df32, type: 3}
+    _Id: 6
+    _IsShow: 0
+  - _UIPopup: {fileID: 2790417656339284751, guid: 1ee2d076c3999ce44b57d85ea96d2f57, type: 3}
+    _Id: 7
+    _IsShow: 0
+  - _UIPopup: {fileID: 597833393332286048, guid: 88014e5302da95846b6a059509daa1f3, type: 3}
+    _Id: 8
+    _IsShow: 0
+  - _UIPopup: {fileID: 226366387125429627, guid: 9f65ba61ad9716a43a8093fc50bc2654, type: 3}
+    _Id: 9
+    _IsShow: 0
+--- !u!114 &1039223805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3309377059897968963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2738952505207644c8b539d676c66bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BgmList: []
+  m_EffectSoundList: []
+  m_BgmVolume: 100
+  m_EffVolume: 100

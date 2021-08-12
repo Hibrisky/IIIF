@@ -42,7 +42,7 @@ public class DragAndDrop : MonoBehaviour
         {
             Vector3 MouseP = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10f);
             Vector3 MousePoint = Camera.main.ScreenToWorldPoint(MouseP);
-            SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0f);
+            SelectedPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 13.0f);
         
         
             Debug.Log("Piece Pos : " + MousePoint.ToString());

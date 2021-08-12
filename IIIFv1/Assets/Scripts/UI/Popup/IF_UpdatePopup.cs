@@ -21,16 +21,17 @@ public class IF_UpdatePopup : MonoBehaviour
     void OnClick_BtnUpdate()
     {
         //임시
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
        
         UIManager._Instance.ShowUIWindow(2);
-        UIManager._Instance.CloseUI(this.gameObject);
+        UIManager._Instance.CloseUIPopup(this.gameObject,3);
     }
 
     void OnClick_BtnCancel()
     {
         //임시
-        this.gameObject.SetActive(false);
-        UIManager._Instance.CloseUI(this.gameObject);
+        //this.gameObject.SetActive(false);
+        UIManager._Instance.CloseUIPopup(this.gameObject,3);
+        Application.Quit();
     }
 }

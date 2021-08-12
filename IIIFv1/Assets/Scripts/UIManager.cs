@@ -7,6 +7,7 @@ public class UIWindow
 {
     public GameObject _UIWindow;
     public int _Id = 0;
+    [HideInInspector]
     public bool _IsShow = false;
 }
 
@@ -15,20 +16,18 @@ public class UIPopup
 {
     public GameObject _UIPopup;
     public int _Id = 0;
+    [HideInInspector]
     public bool _IsShow = false;
 }
 
 
 public class UIManager : MonoBehaviour
 {
-
     public static UIManager _Instance;
 
     public Transform UIPool;
     public UIWindow[] UIWindowList;
     public UIPopup[] UIPopupList;
-
-
 
     int CurrUIWindow = 0;
     int CurrUIPopup = 0;
@@ -44,53 +43,125 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(UIPool);
     }
 
-    public void ShowUIWindow(int _WindowId)
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            int UICount = UIWindowList.Length;
+            for (int i = 0; i < UICount; i++)
+            {
+                UIWindowList[i]._IsShow = false;
+            }
+        }
+    }
+
+    #region 알림 팝업.
+
+    public void CloseOneBtnPopupAndBackToMain(GameObject go, int uiID, string _title, string _plane)
+    {
+        IF_AlarmPopup Alarm = ShowAlarmPopup().GetComponent<IF_AlarmPopup>();
+        Alarm.CloseOneBtnPopupAndBackToMain(go,uiID,_title,_plane);
+    }
+
+
+    public void OneButton_AlarmPopup(string _title, string _plane)
+    {
+        IF_AlarmPopup Alarm = ShowAlarmPopup().GetComponent<IF_AlarmPopup>();
+        Alarm.OneButton_AlarmPopup(_title,_plane);
+    }
+
+    public void TwoButton_AlarmPopup(string _title, string _plane)
+    {
+        IF_AlarmPopup Alarm = ShowAlarmPopup().GetComponent<IF_AlarmPopup>();
+        Alarm.TwoButton_AlarmPopup(_title, _plane);
+    }
+
+    #endregion
+
+
+
+    public void ShowUIWindow(int _WindowId, GameObject ui = null)
     {
         int UICount = UIWindowList.Length;
         for (int i = 0; i < UICount; i++)
         {
             if (UIWindowList[i]._Id == _WindowId)
             {
-                Instantiate(UIWindowList[i]._UIWindow, UIPool);
-                UIWindowList[i]._UIWindow.SetActive(true);
-                UIWindowList[i]._IsShow = true;
-                CurrUIWindow = _WindowId;
+                if (!UIWindowList[i]._IsShow)
+                {
+                    Instantiate(UIWindowList[i]._UIWindow, UIPool);
+                    UIWindowList[i]._UIWindow.SetActive(true);
+                    UIWindowList[i]._IsShow = true;
+                    CurrUIWindow = _WindowId;
+                }
             }
         }
     }
 
-    public void ShowUIPopup(int _PopupId)
+    public void ShowUIPopup(int _PopupId, GameObject ui = null)
     {
-        int UICount = UIPopupList.Length;
-        for (int i = 0; i < UICount; i++)
+        if (ui != null && ui.transform.IsChildOf(UIPool))
         {
-            if (UIPopupList[i]._Id == _PopupId)
+            ui.SetActive(true);
+        }
+        else
+        {
+            int UICount = UIPopupList.Length;
+            for (int i = 0; i < UICount; i++)
             {
-                Instantiate(UIPopupList[i]._UIPopup, UIPool);
-                UIPopupList[i]._UIPopup.SetActive(true);
-                UIPopupList[i]._IsShow = true;
-                CurrUIPopup = _PopupId;
+                if (UIPopupList[i]._Id == _PopupId)
+                {
+                    if (!UIPopupList[i]._IsShow)
+                    {
+                        Instantiate(UIPopupList[i]._UIPopup, UIPool);
+                        UIPopupList[i]._UIPopup.SetActive(true);
+                        UIPopupList[i]._IsShow = true;
+                        CurrUIPopup = _PopupId;
+                    }
+                }
             }
         }
     }
 
-    public void CloseUI(GameObject ui)//닫는용도. 해당창에선 다신 안킴?
+    public GameObject ShowAlarmPopup()
+    {
+        GameObject Popup = Instantiate(UIPopupList[5]._UIPopup, UIPool);
+        UIPopupList[5]._UIPopup.SetActive(true);
+        UIPopupList[5]._IsShow = true;
+
+        return Popup;
+    }
+
+
+    public void CloseUIWindow(GameObject ui, int _id = 0)
     {
         if (ui.transform.IsChildOf(UIPool))
+        {
             Destroy(UIPool.Find(ui.name).gameObject);
+            UIWindowList[_id]._IsShow = false;
+        }
     }
 
-    //public void ShowLoadingBySceneChange(string SceneName)
-    //{
-    //    Transform ts_loading = UIWindowList[1]._UIWindow.transform;
-    //    GameObject obj = UIPool.Find(ts_loading.name).gameObject;
-    //    IF_Loading loading = obj.GetComponent<IF_Loading>();
-    //    if (loading != null)
-    //        loading.LoadLevel(SceneName);
-    //}
+
+    public void CloseUIPopup(GameObject ui, int _id = 0)//닫는용도. 해당창에선 다신 안킴?
+    {
+        if (ui.transform.IsChildOf(UIPool))
+        {
+            //UIPopupList[_id]._UIPopup.SetActive(false);
+            Destroy(UIPool.Find(ui.name).gameObject);
+            UIPopupList[_id]._IsShow = false;
+        }
+    }
+
+    public void HideUI(GameObject ui)
+    {
+        if (ui.transform.IsChildOf(UIPool))
+            ui.SetActive(false);
+    }
 
     public void Destroy()
     {
         Destroy(this);
     }
+
 }

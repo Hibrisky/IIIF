@@ -15,15 +15,6 @@ public enum FishingState
 
 public class IF_FishingRod : MonoBehaviour
 {
-    //Test 변수.
-    public Text x;
-    public Text w;
-    public Text y;
-    public Text z;
-    public Text BaitPos;
-    public Text RodPos;
-
-
     public GameObject m_BaitPos;
     public FishingState m_RodState;
     bool IsCasting = false;
@@ -38,9 +29,15 @@ public class IF_FishingRod : MonoBehaviour
     public void SetFishingState(FishingState state) { m_RodState = state; }
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         m_RodState = FishingState.E_READY;
+    }
+
+    void OnDisable()
+    {
+        m_RodState = FishingState.E_READY;
+        IsStart = false;
     }
 
     // Update is called once per frame
@@ -64,7 +61,7 @@ public class IF_FishingRod : MonoBehaviour
                 transform.localRotation = CurrentRot;
             }
             //임시 
-            RodPos.text = transform.localPosition.ToString();
+            //RodPos.text = transform.localPosition.ToString();
 
             if (CurrentRot.x > -0.15f)//임시 각도가 -0.2보다 낮으면
             {
@@ -91,20 +88,13 @@ public class IF_FishingRod : MonoBehaviour
                     break;
                 case FishingState.E_HIT:
                     {
-                        //Btn_Hit.gameObject.SetActive(true);
                     }
                     break;
                 case FishingState.E_CATCH:
                     {
-                        //ActiveRodLine(Vector3.zero, Vector3.zero);
                     }
                     break;
             }
-
-            x.text = CurrentRot.x.ToString(); //y값이 들어가있다.
-            y.text = deviceRotation.eulerAngles.x.ToString(); // -> X값의 크기에 따라서 반전이 필요하다.
-            z.text = deviceRotation.eulerAngles.z.ToString();
-            w.text = deviceRotation.w.ToString();
         }
     }
 
@@ -137,7 +127,7 @@ public class IF_FishingRod : MonoBehaviour
         Vector3 RodPos = transform.position;
         m_BaitPos.transform.localPosition = new Vector3(RodPos.x, -2f, RodPos.z + 100f/*Random.Range(10f,15f)*/);
 
-        BaitPos.text = m_BaitPos.transform.localPosition.ToString();
+        //BaitPos.text = m_BaitPos.transform.localPosition.ToString();
     }
 
     public void ActiveRodLine(Vector3 _rodEndpoint, Vector3 _bait)
